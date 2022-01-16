@@ -23,6 +23,7 @@ html {
 
 body{
     background: var(--background);
+    color: var(--textcolor);
     font-weight: lighter;
 }
 .loading-bar {
