@@ -73,6 +73,10 @@ body{
 }
 
 /*tab/menu*/
+column-link {
+    background: var(--dark);
+    color: var(--textcolor);
+}
 .column-link--transparent.active {
     color: var(--accent);
 }
@@ -110,6 +114,9 @@ body{
     color: #3e5a7c;
 }
 
+.drawer--header {
+    background: var(--dark);
+}
 .drawer__inner {
     background: var(--dark);
 }
@@ -358,6 +365,10 @@ body{
 	border-radius: 4px;
 }
 /* profile */
+.account__header__bio .account__header__content {
+    padding: 10px 20px 10px;
+    color: var(--textcolor);
+}
 .button.logo-button.button--destructive:active, .button.logo-button.button--destructive, .button.logo-button.button--destructive {
     background: var(--accent);
 }
@@ -365,8 +376,8 @@ body{
     background: var(--accent);
 }
 .account__header__bar {
-    background: #313543;
-    border-bottom: 1px solid var(--border);
+    background: var(--dark);
+/*     border-bottom: 1px solid var(--border); */
 }
 
 .column-header__back-button {
@@ -382,7 +393,10 @@ body{
 }
 
 .account__action-bar__tab.active {
-    border-bottom: 4px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+.account__action-bar__tab:hover {
+    background: var(--border);
 }
 .button.logo-button:active, .button.logo-button:focus, .button.logo-button:hover {
     background: var(--accent-hover);
@@ -421,7 +435,7 @@ body{
 /*settings*/
 .glitch.local-settings__navigation__item.active {
     background: var(--accent);
-    color: #fff;
+    color: var(--textcolor);
 }
 
 .column-link {
@@ -429,7 +443,7 @@ body{
     color: var(--textcolor);
 }
 .column-link:hover {
-    background: #404657;
+    background: var(--background);
 }
 
 .column-subheading {
@@ -438,6 +452,13 @@ body{
 }
 .getting-started {
     background: var(--dark);
+}
+.flex-spacer, .getting-started__wrapper, .getting_started {
+    background: var(--dark);
+}
+
+.load-more:hover {
+    background: #606984;
 }
 
 .getting-started__footer p, .getting-started__panel p {
