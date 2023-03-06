@@ -1,0 +1,48 @@
+/* THIS IS A PLACEHOLDER FILE
+   place a css file at $static_dir/static/custom.css
+   to apply custom styles to your frontend
+*/
+
+/* delete node */
+.hide-bio,
+.edit-profile-button
+{
+    display: none;
+}
+
+.NavPanel .timelines-background
+{
+    background-color: transparent;
+}
+
+/* Icon Highlight */
+.svg-inline--fa:hover,
+.menu-item:hover > .svg-inline--fa,
+.router-link-active > .svg-inline--fa
+{
+    color: var(--lightText);
+}
+
+/* fade transition */
+.NavPanel .menu-item,
+.svg-inline--fa
+{
+    transition: 0.32s;
+}
+
+.tab.button-default {
+    background-color: var(--btnDisabledText);
+}
+
+.NavPanel .timelines-background {
+    padding: 0;
+}
+
+.NavPanel li:first-child .menu-item {
+    border-radius: 0;
+}
+
+.user-card-bio {
+    text-align: left;
+    margin-left: 1em;
+}
