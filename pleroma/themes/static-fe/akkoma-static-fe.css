@@ -600,13 +600,13 @@ summary {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border: 1px solid transparent;
-    border-bottom: none;
+    border-bottom-color: transparent;
 }
 
 .tab.active {
     background: var(--base);
     border: 1px solid var(--border);
-    border-bottom: none;
+    border-bottom-color: transparent;
 }
 
 .profile .status-container {
