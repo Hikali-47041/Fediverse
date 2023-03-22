@@ -26,7 +26,7 @@
       ],
       "topBar": [
         {
-          "color": "#3daee9",
+          "color": "#e974a1",
           "x": 0,
           "y": 3.14,
           "blur": "0",
@@ -132,7 +132,7 @@
       "text": "#eff0f1",
       "badgeNotification": "#3daee9",
       "badgeNotificationText": "#eff0f1",
-      "alertNeutral": "#3daee9",
+      "alertNeutral": "#e974a1",
       "alertNeutralText": "#eff0f1",
       "alertPopupNeutral": "#1cdc9a",
       "alertPopupNeutralText": "#31363b",
@@ -305,7 +305,7 @@
       ],
       "topBar": [
         {
-          "color": "#3daee9",
+          "color": "#e974a1",
           "x": 0,
           "y": 3.14,
           "blur": "0",
@@ -424,7 +424,7 @@
       "text": "#eff0f1",
       "badgeNotification": "#3daee9",
       "badgeNotificationText": "#eff0f1",
-      "alertNeutral": "#3daee9",
+      "alertNeutral": "#e974a1",
       "alertNeutralText": "#eff0f1",
       "alertPopupNeutral": "#1cdc9a",
       "alertPopupNeutralText": "#31363b",
@@ -530,7 +530,7 @@
       "highlightIcon": "#bdc3c7",
       "highlightPostFaintLink": "#3daee9",
       "profileTint": "#31363b",
-      "profileBg": "#191e22",
+      "profileBg": "#31363b",
       "wallpaper": "#232629"
     },
     "radii": {
