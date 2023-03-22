@@ -1,9 +1,10 @@
 /* Hikali-dark themes from pleroma-fe */
 
 :root {
-    --accent:#3daee9; /* Plasma Blue */
-    --accent-a80:#3daee9C0; /* Plasma Blue */
-    --accent-hover: #93cee9;  /* Hover Blue */
+    --accent: #e974a1; /* Hikali Cherry Pink */
+    --main:#3daee9; /* Plasma Blue */
+    --main-a80:#3daee9C0; /* Plasma Blue */
+    --main-hover: #93cee9;  /* Hover Blue */
     --background: #232629; /* Shade Black */
     --base: #31363b; /* Charcoal Gray */
     --base-a80: #31363bC0; /* Charcoal Gray */
@@ -13,16 +14,16 @@
 
     --icon-filter: invert(38%) sepia(11%) saturate(209%) hue-rotate(179deg) brightness(99%) contrast(89%);
     --wallpaper: var(--background);
-    --alertNeutral: var(--accent-a80);
+    --alertNeutral: var(--accent);
     --alertNeutralText: var(--foreground);
     --avatarShadow: none; /* 0px 1px 8px 0px rgba(0, 0, 0, 0.7); */
     --loadPostsSelected: var(--base);
-    --loadPostsSelectedText: var(--accent-hover);
+    --loadPostsSelectedText: var(--main-hover);
     --profileBg: transparent;
     --profileTint: rgba(49,54,59, 0.44);
     --btnText: var(--foreground);
     --btn: var(--base-alt);
-    --btnHover: var(--accent);
+    --btnHover: var(--main);
     --btnShadow: none; /* 0px 0px 2px 0px rgba(0, 0, 0, 1) , 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.2) inset; */
     --btnHoverShadow: none; /* 0px 0px 1px 2px rgba(185, 185, 186, 0.4) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.2) inset; */
     --lightText: var(--foreground);
@@ -35,18 +36,22 @@
     --underlay: transparent;
     --faint: var(--foreground-alt);
     --selectedPost: var(--base);
-    --link: var(--accent);
-    --link-hover: var(--accent-hover);
+    --link: var(--main);
+    --link-hover: var(--main-hover);
     --text: var(--foreground);
     --border: var(--base-alt);
-    --poll: var(--accent-hover);
+    --poll: var(--main-hover);
+}
+
+@media (prefers-color-scheme: dark) {
+    
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent:#3daee9; /* Plasma Blue */
-        --accent-a80:#3daee9C0; /* Plasma Blue */
-        --accent-hover: #93cee9;  /* Hover Blue */
+        --main:#3daee9; /* Plasma Blue */
+        --main-a80:#3daee9C0; /* Plasma Blue */
+        --main-hover: #93cee9;  /* Hover Blue */
         --background: #fcfcfc; /* Shade Black */
         --base: #eff0f1; /* Charcoal Gray */
         --base-a80: #eff0f1C0; /* Charcoal Gray */
