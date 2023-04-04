@@ -12,6 +12,9 @@
     --foreground: #eff0f1; /* Cardboard Gray */
     --foreground-alt: #bdc3c7; /* Alternate Gray */
 
+    --topBar: #31363b;
+    --topBarText: #eff0f1;
+
     --icon-filter: invert(38%) sepia(11%) saturate(209%) hue-rotate(179deg) brightness(99%) contrast(89%);
     --wallpaper: var(--background);
     --alertNeutral: var(--accent);
@@ -30,9 +33,7 @@
     --panel: var(--base);
     --panelShadow: none; /* 0px 0px 3px 0px rgba(0, 0, 0, 0.5) , 0px 4px 6px 3px rgba(0, 0, 0, 0.3); */
     --panelHeaderShadow: none; /* 0px 1px 3px 0px rgba(0, 0, 0, 0.4) , 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset; */
-    --topBar: var(--base);
-    --topBarText: var(--foreground);
-    --topBarShadow: 0px 2px 0px 0px var(--accent);
+    --topBarShadow: 0px 4px 0px 0px var(--accent);
     --underlay: transparent;
     --faint: var(--foreground-alt);
     --selectedPost: var(--base);
