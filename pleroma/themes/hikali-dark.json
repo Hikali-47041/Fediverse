@@ -26,9 +26,9 @@
       ],
       "topBar": [
         {
-          "color": "#e974a1",
+          "color": "#e974a3",
           "x": 0,
-          "y": 3.14,
+          "y": 1,
           "blur": "0",
           "spread": "0",
           "alpha": "0.86"
@@ -132,7 +132,7 @@
       "text": "#eff0f1",
       "badgeNotification": "#3daee9",
       "badgeNotificationText": "#eff0f1",
-      "alertNeutral": "#e974a1",
+      "alertNeutral": "#e974a3",
       "alertNeutralText": "#eff0f1",
       "alertPopupNeutral": "#1cdc9a",
       "alertPopupNeutralText": "#31363b",
@@ -305,7 +305,7 @@
       ],
       "topBar": [
         {
-          "color": "#e974a1",
+          "color": "#e974a3",
           "x": 0,
           "y": 3.14,
           "blur": "0",
@@ -424,7 +424,7 @@
       "text": "#eff0f1",
       "badgeNotification": "#3daee9",
       "badgeNotificationText": "#eff0f1",
-      "alertNeutral": "#e974a1",
+      "alertNeutral": "#e974a3",
       "alertNeutralText": "#eff0f1",
       "alertPopupNeutral": "#1cdc9a",
       "alertPopupNeutralText": "#31363b",
