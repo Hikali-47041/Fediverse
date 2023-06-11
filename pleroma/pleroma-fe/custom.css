@@ -5,6 +5,8 @@
 
 /* delete node */
 .hide-bio,
+.quote,
+.QuoteButton,
 .edit-profile-button
 {
     display: none;
