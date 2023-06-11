@@ -1,7 +1,7 @@
 /* Hikali-dark themes from pleroma-fe */
 
 :root {
-    --accent: #e974a1; /* Hikali Cherry Pink */
+    --accent: #e974a3; /* Hikali Cherry Pink */
     --main:#3daee9; /* Plasma Blue */
     --main-a80:#3daee9C0; /* Plasma Blue */
     --main-hover: #93cee9;  /* Hover Blue */
@@ -33,7 +33,9 @@
     --panel: var(--base);
     --panelShadow: none; /* 0px 0px 3px 0px rgba(0, 0, 0, 0.5) , 0px 4px 6px 3px rgba(0, 0, 0, 0.3); */
     --panelHeaderShadow: none; /* 0px 1px 3px 0px rgba(0, 0, 0, 0.4) , 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset; */
-    --topBarShadow: 0px 4px 0px 0px var(--accent);
+    --topBar: var(--base);
+    --topBarText: var(--foreground);
+    --topBarShadow: 0px 2px 0px 0px var(--accent);
     --underlay: transparent;
     --faint: var(--foreground-alt);
     --selectedPost: var(--base);
@@ -50,8 +52,6 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --main:#3daee9; /* Plasma Blue */
-        --main-a80:#3daee9C0; /* Plasma Blue */
         --main-hover: #93cee9;  /* Hover Blue */
         --background: #fcfcfc; /* Shade Black */
         --base: #eff0f1; /* Charcoal Gray */
@@ -226,10 +226,10 @@ body > .container {
     color: var(--faint);
 }
 
-.u-photo {
+/* .u-photo {
     width: 50px;
     height: 50px;
-}
+} */
 
 .repeat-header .u-photo {
     height: 20px;
@@ -423,14 +423,19 @@ header a:hover, .h-card a:hover {
     margin-bottom: 0.5em;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: var(--border, #222);
+    border-color: var(--border, --background);
 }
 
 summary {
-    text-align: center;
+    text-align: left;
     color: var(--link);
     cursor: pointer;
+    padding: 1%;
 }
+
+/* summary::marker {
+    content: "";
+} */
 
 .status-body {
     word-wrap: break-word;
