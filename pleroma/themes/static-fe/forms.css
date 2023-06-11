@@ -2,7 +2,7 @@
 
 :root {
     /* Colors */
-    --accent: #e974a1; /* Hikali Cherry Pink */
+    --accent: #e974a3; /* Hikali Cherry Pink */
     --main:#3daee9; /* Plasma Blue */
     --main-a80:#3daee9C0; /* Plasma Blue */
     --main-hover: #93cee9;  /* Hover Blue */
@@ -29,7 +29,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent: #e974a1; /* Hikali Cherry Pink */
+        --accent: #e974a3; /* Hikali Cherry Pink */
         --main:#3daee9; /* Plasma Blue */
         --main-a80:#3daee9C0; /* Plasma Blue */
         --main-hover: #93cee9;  /* Hover Blue */
