@@ -1,0 +1,28 @@
+#!/bin/bash
+# https://docs.akkoma.dev/stable/administration/backup/
+# cron every friday 5:00
+# `crontab -e`
+# 0 5 * * 5 bash <path-to>/akkoma-backup.sh
+
+workdir="/tmp"
+savedir="$HOME/akkoma-backup"
+dbname="akkoma"
+filename="hi-47041-net_$(date -I).pgdump"
+backup_file_amount=5
+
+# mkdir if $savedir does not exist
+if [ ! -e "$savedir" ]
+then
+    mkdir -p "$savedir"
+fi
+
+# backup
+cd "$workdir" || exit 1
+sudo -Hu postgres pg_dump -d "$dbname" --format=custom -f "$workdir/$filename"
+sudo mv "$workdir/$filename" "$savedir"
+
+# remove older backup data
+if [ "$(find "$savedir" -type f | wc -l)" -ge "$backup_file_amount" ]
+then
+    sudo rm "$savedir/$(find "$workdir" -type f | sort | head -1)"
+fi
