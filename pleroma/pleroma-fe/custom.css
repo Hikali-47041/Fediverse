@@ -44,7 +44,12 @@
     border-radius: 0;
 }
 
-.user-card-bio {
+.user-card-bio, 
+.StatusBody .tall-status-hider,
+.StatusBody .tall-subject-hider,
+.StatusBody .status-unhider, 
+.StatusBody .cw-status-hider
+{
     text-align: left;
     margin-left: 1em;
 }
