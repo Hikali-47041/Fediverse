@@ -31,6 +31,6 @@ mv "$workdir/$filename" "$savedir"
 # remove older backup data
 while [ "$(find "$savedir" -type f | wc -l)" -ge "$backup_file_amount" ]
 do
-    if "$debug_flag"; then echo "akkoma-backup.sh [debug] old pg_dump $savedir/$(find "$savedir" -type f | sort | head -1) removed!"; fi
-    rm "$savedir/$(find "$savedir" -type f | sort | head -1)"
+    if "$debug_flag"; then echo "akkoma-backup.sh [debug] old pg_dump $(find "$savedir" -type f | sort | head -1) removed!"; fi
+    rm "$(find "$savedir" -type f | sort | head -1)"
 done
