@@ -2,7 +2,7 @@
 # https://docs.akkoma.dev/stable/administration/backup/
 # cron every friday 5:00
 # `sudo crontab -e`
-# 0 5 * * 5 bash <path-to>/akkoma-backup.sh
+# 0 5 * * 5 bash <path/to>/akkoma-backup.sh
 
 workdir="/tmp"
 savedir="$HOME/akkoma-backup"
@@ -22,7 +22,7 @@ su postgres -lc "pg_dump -d $dbname --format=custom -f "$workdir/"$filename"""
 mv "$workdir/$filename" "$savedir"
 
 # remove older backup data
-if [ "$(find "$savedir" -type f | wc -l)" -ge "$backup_file_amount" ]
-then
-    rm "$savedir/$(find "$workdir" -type f | sort | head -1)"
-fi
+while [ "$(find "$savedir" -type f | wc -l)" -ge "$backup_file_amount" ]
+do
+    rm "$savedir/$(find "$savedir" -type f | sort | head -1)"
+done
