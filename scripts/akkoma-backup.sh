@@ -7,6 +7,7 @@
 workdir="/tmp"
 savedir="$HOME/akkoma-backup"
 dbname="akkoma"
+dbuser="postgres"
 filename="hi-47041-net_$(date -I).pgdump"
 backup_file_amount=5
 
@@ -18,7 +19,7 @@ fi
 
 # backup
 cd "$workdir" || exit 1
-su postgres -lc "pg_dump -d $dbname --format=custom -f "$workdir/"$filename"""
+su "$dbuser" -lc "pg_dump -d $dbname --format=custom -f "$workdir/"$filename"""
 mv "$workdir/$filename" "$savedir"
 
 # remove older backup data
